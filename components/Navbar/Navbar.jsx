@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const Nav = ({ items }) => {
+const Navbar = ({ items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -59,4 +59,4 @@ const Nav = ({ items }) => {
   );
 };
 
-export default Nav;
+export default Navbar;
