@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/Navbar/Navbar";
+import CountDownBanner from "../components/CountDownBanner/CountDownBanner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <CountDownBanner />
         <Navbar items={navMenuItems} />
         {children}
       </body>
