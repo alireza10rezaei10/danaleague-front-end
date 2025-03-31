@@ -2,7 +2,7 @@ import { ClockIcon, HomeModernIcon } from "@heroicons/react/24/outline";
 
 const CountDownBanner = () => {
   return (
-    <div className="bg-yellow-500 text-white p-4 flex items-center w-full justify-center">
+    <div className="bg-[var(--gold-color)] text-white p-4 flex items-center w-full justify-center">
       {/* Text in the middle with icons inside */}
       <div className="flex items-center font-bold">
         {/* Left Clock Icon */}
