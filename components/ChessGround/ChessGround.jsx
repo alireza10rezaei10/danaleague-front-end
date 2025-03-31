@@ -1,11 +1,9 @@
 "use client";
 
-const ChessGround = () => {
-  // Calculate number of squares based on window width directly
+const ChessGround = ({ colors }) => {
   const numberOfSquares =
     Math.floor((window.innerWidth + window.outerWidth) / 50) + 1;
 
-  const colors = ["bg-gray-700", "bg-gray-300"];
   const squares = Array.from({ length: numberOfSquares });
 
   return (
