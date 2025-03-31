@@ -19,9 +19,9 @@ export const metadata = {
 };
 
 const navMenuItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Contact", path: "/contact" },
+  { name: "خانه", path: "/" },
+  { name: "درباره ما", path: "/about" },
+  { name: "تماس با ما", path: "/contact" },
 ];
 
 export default function RootLayout({ children }) {

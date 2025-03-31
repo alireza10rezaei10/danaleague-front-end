@@ -35,7 +35,7 @@ const Navbar = ({ items }) => {
 
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold">
-          MyWebsite
+          دانالیگ
         </Link>
       </div>
 
