@@ -1,4 +1,5 @@
 import ChessGround from "@/components/ChessGround/ChessGround";
+import Galary from "@/components/Galary/Galary";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <br />
       <br />
       <ChessGround colors={["bg-white", "bg-gray-300"]} number_of_rows={2} />
+      <Galary />
       <br />
       <br />
       <br />
