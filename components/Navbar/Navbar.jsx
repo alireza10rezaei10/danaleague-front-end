@@ -10,11 +10,6 @@ const Navbar = ({ items }) => {
   return (
     <nav className="bg-blue-600 text-white p-4 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold">
-          MyWebsite
-        </Link>
-
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white cursor-pointer"
@@ -37,6 +32,11 @@ const Navbar = ({ items }) => {
             </li>
           ))}
         </ul>
+
+        {/* Logo */}
+        <Link href="/" className="text-2xl font-bold">
+          MyWebsite
+        </Link>
       </div>
 
       {/* Mobile Dropdown Menu */}
