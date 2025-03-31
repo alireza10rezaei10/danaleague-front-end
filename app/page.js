@@ -1,3 +1,5 @@
+import ChessGround from "@/components/ChessGround/ChessGround";
+
 export default function Home() {
   return (
     <div>
@@ -6,6 +8,7 @@ export default function Home() {
       <br />
       <br />
       <br />
+      <ChessGround />
       <br />
       <br />
       <br />
