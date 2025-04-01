@@ -1,13 +1,13 @@
-import Galary from "@/components/Galary";
 import Hero from "./sections/Hero";
 import Intro from "./sections/Intro";
+import Last from "./sections/Last";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Intro />
-      <Galary />
+      <Last />
       <br />
       <br />
       <br />
