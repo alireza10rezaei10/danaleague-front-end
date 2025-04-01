@@ -1,6 +1,7 @@
 import Hero from "./sections/Hero";
 import Intro from "./sections/Intro";
 import Last from "./sections/Last";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -8,60 +9,7 @@ export default function Home() {
       <Hero />
       <Intro />
       <Last />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footer />
     </div>
   );
 }
