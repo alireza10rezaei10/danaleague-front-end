@@ -9,10 +9,6 @@ const Gallery = () => {
 
   return (
     <div className="container mx-auto p-4 relative text-gray-900">
-      <h2 className="text-center text-2xl font-bold mb-4 pb-5 pt-5">
-        گالری تصاویر
-      </h2>
-
       {/* Gallery Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 relative max-h-100 overflow-hidden">
         {images.map((src, index) => (

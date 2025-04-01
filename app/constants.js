@@ -11,3 +11,24 @@ export const IMAGES = {
   POSTER: { URL: "/images/poster.jpg", ALT: "پوستر جشنواره دانالیگ" },
   PENCIL: { URL: "/images/icons/pencil.svg", ALT: "مداد کارتونی" },
 };
+
+export const MEHVARS = [
+  {
+    URL: "/festival",
+    IMG_URL: "/images/icons/festival.svg",
+    ALT: "جعبه ای که درش باز شده و ازش کلی ستاره اومده بیرون",
+    TITLE: "معرفی جشنواره",
+  },
+  {
+    URL: "/timing",
+    IMG_URL: "/images/icons/timing.svg",
+    ALT: "یک تقویم با یک ساعت در بالای سمت چپ آن",
+    TITLE: "زمان بندی",
+  },
+  {
+    URL: "/pivots",
+    IMG_URL: "/images/icons/flowchart.svg",
+    ALT: "فلوچارت",
+    TITLE: "محورها",
+  },
+];
