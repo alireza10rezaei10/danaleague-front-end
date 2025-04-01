@@ -1,4 +1,4 @@
-import Galary from "@/components/Galary/Galary";
+import Galary from "@/components/Galary";
 import Hero from "./sections/Hero";
 import Intro from "./sections/Intro";
 

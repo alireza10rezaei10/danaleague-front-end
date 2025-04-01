@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { STATIC_TEXTS, IMAGES } from "@/app/constants";
 import Image from "next/image";
-import ChessGround from "@/components/ChessGround/ChessGround";
+import ChessGround from "@/components/ChessGround";
 
 const Intro = () => {
   return (

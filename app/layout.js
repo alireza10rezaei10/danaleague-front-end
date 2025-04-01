@@ -1,6 +1,6 @@
 import { Vazirmatn } from "next/font/google";
-import Navbar from "../components/Navbar/Navbar";
-import CountDownBanner from "../components/CountDownBanner/CountDownBanner";
+import Navbar from "../components/Navbar";
+import CountDownBanner from "../components/CountDownBanner";
 import "./globals.css";
 
 const VazirmatnFont = Vazirmatn({
