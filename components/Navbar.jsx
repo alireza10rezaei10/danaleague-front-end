@@ -41,12 +41,12 @@ const Navbar = ({ items }) => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col space-y-4 bg-blue-700 p-4 ">
+        <ul className="md:hidden flex flex-col space-y-4 bg-[var(--primary-color)] p-4 ">
           {items.map((item) => (
             <li key={item.path}>
               <Link
                 href={item.path}
-                className="block text-center py-2 hover:bg-blue-500 rounded"
+                className="block text-center py-2 hover:bg-[var(--gold-color)] hover:text-[var(--primary-color)] rounded"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
