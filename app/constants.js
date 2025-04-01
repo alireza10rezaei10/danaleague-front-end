@@ -9,4 +9,5 @@ export const STATIC_TEXTS = {
 
 export const IMAGES = {
   POSTER: { URL: "/images/poster.jpg", ALT: "پوستر جشنواره دانالیگ" },
+  PENCIL: { URL: "/images/icons/pencil.svg", ALT: "مداد کارتونی" },
 };
