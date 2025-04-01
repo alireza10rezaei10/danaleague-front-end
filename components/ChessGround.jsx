@@ -1,10 +1,33 @@
 "use client";
 
-const ChessGround = ({ colors, number_of_rows }) => {
-  const number_of_squares =
-    Math.floor((window.innerWidth + window.outerWidth) / 50) + 1;
+import { useEffect, useState } from "react";
 
-  const squares = Array.from({ length: number_of_squares });
+const ChessGround = ({ colors, number_of_rows }) => {
+  const [numberOfSquares, setNumberOfSquares] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const calculateSquares = () =>
+        Math.floor((window.innerWidth + window.outerWidth) / 50) + 1;
+
+      setNumberOfSquares(calculateSquares());
+
+      // Update the number of squares on window resize
+      window.addEventListener("resize", () =>
+        setNumberOfSquares(calculateSquares())
+      );
+
+      return () => {
+        window.removeEventListener("resize", () =>
+          setNumberOfSquares(calculateSquares())
+        );
+      };
+    }
+  }, []);
+
+  if (numberOfSquares === 0) return null; // Prevent rendering until `useEffect` runs
+
+  const squares = Array.from({ length: numberOfSquares });
   const rows = Array.from({ length: number_of_rows });
 
   return (
