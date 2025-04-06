@@ -32,3 +32,12 @@ export const MEHVARS = [
     TITLE: "محورها",
   },
 ];
+
+export const NAV_MENU_ITEMS = [
+  { name: "خانه", path: "/" },
+  { name: "ثبت نام", path: "/sign-up" },
+  { name: "اطلاعات جشنواره", path: "/festival" },
+  { name: "چالش های علمی", path: "/challenges" },
+  { name: "درباره ما", path: "/about-us" },
+  { name: "تماس با ما", path: "/contact-us" },
+];
