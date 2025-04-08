@@ -14,19 +14,19 @@ export const IMAGES = {
 
 export const MEHVARS = [
   {
-    URL: "/festival",
+    URL: "/info",
     IMG_URL: "/images/icons/festival.svg",
     ALT: "جعبه ای که درش باز شده و ازش کلی ستاره اومده بیرون",
     TITLE: "معرفی جشنواره",
   },
   {
-    URL: "/timing",
+    URL: "/info#timing",
     IMG_URL: "/images/icons/timing.svg",
     ALT: "یک تقویم با یک ساعت در بالای سمت چپ آن",
     TITLE: "زمان بندی",
   },
   {
-    URL: "/pivots",
+    URL: "/info#pivots",
     IMG_URL: "/images/icons/flowchart.svg",
     ALT: "فلوچارت",
     TITLE: "محورها",
@@ -36,7 +36,7 @@ export const MEHVARS = [
 export const NAV_MENU_ITEMS = [
   { name: "خانه", path: "/" },
   { name: "ثبت نام", path: "/sign-up" },
-  { name: "اطلاعات جشنواره", path: "/festival" },
+  { name: "اطلاعات جشنواره", path: "/info" },
   { name: "چالش های علمی", path: "/challenges" },
   { name: "درباره ما", path: "/about-us" },
   { name: "تماس با ما", path: "/contact-us" },

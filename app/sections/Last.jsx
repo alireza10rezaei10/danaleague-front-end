@@ -1,4 +1,4 @@
-import Galary from "@/components/Galary";
+import Gallery from "@/components/Gallery";
 import SimpleCard from "@/components/SimpleCard";
 import { MEHVARS } from "../constants";
 
@@ -23,7 +23,7 @@ const Last = () => {
       <h2 className="text-center text-2xl font-bold mb-6 mt-12">
         گالری تصاویر
       </h2>
-      <Galary />
+      <Gallery preview={true} />
     </section>
   );
 };
