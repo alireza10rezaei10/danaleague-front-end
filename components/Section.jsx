@@ -1,4 +1,4 @@
-const SimpleSection = ({ id, title, description, list, items }) => (
+const Section = ({ id, title, description, list, items, ltr, children }) => (
   <section
     id={id}
     className="scroll-mt-24 bg-white p-6 rounded-2xl shadow-md space-y-4 border border-gray-200"
@@ -9,7 +9,11 @@ const SimpleSection = ({ id, title, description, list, items }) => (
       </h2>
     )}
     {description && (
-      <p className="text-gray-700 leading-relaxed whitespace-pre-line text-justify">
+      <p
+        className={`${
+          ltr ? "text-left" : ""
+        } text-gray-700 leading-relaxed whitespace-pre-line text-justify`}
+      >
         {description}
       </p>
     )}
@@ -37,7 +41,8 @@ const SimpleSection = ({ id, title, description, list, items }) => (
         ))}
       </ul>
     )}
+    {children && <div className="mt-4">{children}</div>}
   </section>
 );
 
-export default SimpleSection;
+export default Section;
