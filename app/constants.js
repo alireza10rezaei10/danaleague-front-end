@@ -33,9 +33,11 @@ export const MEHVARS = [
   },
 ];
 
+export const SIGN_UP_URL = "https://zarinp.al/697053";
+
 export const NAV_MENU_ITEMS = [
   { name: "خانه", path: "/" },
-  { name: "ثبت نام", path: "/sign-up" },
+  { name: "ثبت نام", path: SIGN_UP_URL },
   { name: "اطلاعات جشنواره", path: "/info" },
   { name: "چالش های علمی", path: "/challenges" },
   { name: "درباره ما", path: "/about-us" },

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SIGN_UP_URL } from "../constants";
 
 export const STATIC_TEXTS = {
   INTRO: {
@@ -79,7 +80,7 @@ export const STATIC_TEXTS = {
         مسابقات برگزار می‌شود. دانش‌آموزان می‌توانند در یک یا چند عنوان از این
         بخش‌ها{" "}
         <Link
-          href="/sign-up"
+          href={SIGN_UP_URL}
           className="text-blue-500 underline underline-offset-7 hover:text-[var(--gold-color)]"
         >
           ثبت‌نام
