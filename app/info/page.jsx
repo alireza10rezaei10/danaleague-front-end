@@ -23,12 +23,12 @@ const Info = () => {
       <Section
         id="pivots"
         title={STATIC_TEXTS.PIVOTS.TITLE}
-        items={STATIC_TEXTS.PIVOTS.PIVOTS_LIST}
+        innerSections={STATIC_TEXTS.PIVOTS.PIVOTS_LIST}
       />
       <Section
         id="fields"
         title={STATIC_TEXTS.FIELDS.TITLE}
-        items={STATIC_TEXTS.FIELDS.FIELDS_LIST}
+        innerSections={STATIC_TEXTS.FIELDS.FIELDS_LIST}
       />
       <Section id="timing" title={STATIC_TEXTS.TIMING.TITLE}>
         <ScheduleTable data={TIMING} />
@@ -52,13 +52,13 @@ const Info = () => {
         id="signup"
         title={STATIC_TEXTS.SIGN_UP.TITLE}
         description={STATIC_TEXTS.SIGN_UP.DESCRIPTION}
-        items={STATIC_TEXTS.SIGN_UP.SIGN_UP_LIST}
+        innerSections={STATIC_TEXTS.SIGN_UP.SIGN_UP_LIST}
       />
       <Section
         id="documents"
         title={STATIC_TEXTS.DOCUMENTS.TITLE}
         description={STATIC_TEXTS.DOCUMENTS.DESCRIPTION}
-        items={STATIC_TEXTS.DOCUMENTS.DOCUMENTS_LIST}
+        innerSections={STATIC_TEXTS.DOCUMENTS.DOCUMENTS_LIST}
       />
       <Section
         id="contact"

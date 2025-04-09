@@ -22,7 +22,15 @@ const Description = ({ text, ltr }) => {
   );
 };
 
-const Section = ({ id, title, description, list, items, ltr, children }) => (
+const Section = ({
+  id,
+  title,
+  description,
+  list,
+  innerSections,
+  ltr,
+  children,
+}) => (
   <section
     id={id}
     className="scroll-mt-24 bg-white p-6 rounded-2xl shadow-md space-y-4 border border-gray-200"
@@ -34,24 +42,26 @@ const Section = ({ id, title, description, list, items, ltr, children }) => (
     )}
     {description && <Description text={description} ltr={ltr} />}
     {list && <List items={list} />}
-    {items && (
+    {innerSections && (
       <ul className="space-y-4 text-right">
-        {items.map((item, idx) => (
+        {innerSections.map((innerSection, idx) => (
           <li
             key={idx}
             className={`p-4 rounded-lg border border-gray-200 ${
-              item.COLOR ? `bg-${item.COLOR}` : "bg-gray-50"
+              innerSection.COLOR ? `bg-${innerSection.COLOR}` : "bg-gray-50"
             }`}
           >
             <p
               className={`font-semibold text-lg ${
-                item.COLOR ? "text-white" : "text-[var(--primary-color)]"
+                innerSection.COLOR
+                  ? "text-white"
+                  : "text-[var(--primary-color)]"
               }  mb-1`}
             >
-              {item.TITLE}
+              {innerSection.TITLE}
             </p>
-            <Description text={item.DESCRIPTION} />
-            {item.LIST && <List items={item.LIST} />}
+            <Description text={innerSection.DESCRIPTION} />
+            {innerSection.LIST && <List items={innerSection.LIST} />}
           </li>
         ))}
       </ul>
