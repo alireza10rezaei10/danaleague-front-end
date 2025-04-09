@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Navbar = ({ items }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="bg-[var(--primary-color)] text-white p-4 shadow-lg sticky top-0 z-50">
@@ -26,7 +28,14 @@ const Navbar = ({ items }) => {
         <ul className="hidden md:flex space-x-6">
           {items.map((item) => (
             <li key={item.path}>
-              <Link href={item.path} className="hover:text-gray-200 transition">
+              <Link
+                href={item.path}
+                className={`transition hover:text-gray-200 ${
+                  pathname === item.path
+                    ? "text-[var(--gold-color)] font-semibold"
+                    : ""
+                }`}
+              >
                 {item.name}
               </Link>
             </li>
@@ -41,12 +50,16 @@ const Navbar = ({ items }) => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col space-y-4 bg-[var(--primary-color)] p-4 ">
+        <ul className="md:hidden flex flex-col space-y-4 bg-[var(--primary-color)] p-4">
           {items.map((item) => (
             <li key={item.path}>
               <Link
                 href={item.path}
-                className="block text-center py-2 hover:bg-[var(--gold-color)] hover:text-[var(--primary-color)] rounded"
+                className={`block text-center py-2 rounded transition ${
+                  pathname === item.path
+                    ? "text-[var(--gold-color)] font-semibold"
+                    : "hover:bg-[var(--gold-color)] hover:text-[var(--primary-color)]"
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
