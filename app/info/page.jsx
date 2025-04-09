@@ -16,15 +16,21 @@ const Info = () => {
         list={STATIC_TEXTS.GOALS.GOALS_LIST}
       />
       <Section
+        id="prizes"
+        title={STATIC_TEXTS.PRIZES.TITLE}
+        list={STATIC_TEXTS.PRIZES.PRIZES_LIST}
+      />
+      <Section
         id="pivots"
         title={STATIC_TEXTS.PIVOTS.TITLE}
         items={STATIC_TEXTS.PIVOTS.PIVOTS_LIST}
       />
       <Section
-        id="timing"
-        title={STATIC_TEXTS.TIMING.TITLE}
-        description={STATIC_TEXTS.TIMING.DESCRIPTION}
-      >
+        id="fields"
+        title={STATIC_TEXTS.FIELDS.TITLE}
+        items={STATIC_TEXTS.FIELDS.FIELDS_LIST}
+      />
+      <Section id="timing" title={STATIC_TEXTS.TIMING.TITLE}>
         <ScheduleTable data={TIMING} />
       </Section>
       <Section
@@ -35,7 +41,7 @@ const Info = () => {
       <Section
         id="judgeness"
         title={STATIC_TEXTS.JODGEMENT.TITLE}
-        list={STATIC_TEXTS.JODGEMENT.JODGENESS_LIST}
+        list={STATIC_TEXTS.JODGEMENT.JODGEMENT_LIST}
       />
       <Section
         id="rules"
@@ -46,12 +52,13 @@ const Info = () => {
         id="signup"
         title={STATIC_TEXTS.SIGN_UP.TITLE}
         description={STATIC_TEXTS.SIGN_UP.DESCRIPTION}
-        list={STATIC_TEXTS.SIGN_UP.SIGN_UP_LIST}
+        items={STATIC_TEXTS.SIGN_UP.SIGN_UP_LIST}
       />
       <Section
-        id="prizes"
-        title={STATIC_TEXTS.PRIZES.TITLE}
-        description={STATIC_TEXTS.PRIZES.DESCRIPTION}
+        id="documents"
+        title={STATIC_TEXTS.DOCUMENTS.TITLE}
+        description={STATIC_TEXTS.DOCUMENTS.DESCRIPTION}
+        items={STATIC_TEXTS.DOCUMENTS.DOCUMENTS_LIST}
       />
       <Section
         id="contact"
