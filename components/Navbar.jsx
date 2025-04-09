@@ -18,9 +18,9 @@ const Navbar = ({ items }) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <XMarkIcon className="w-8 h-8 cursor-pointer" />
+            <XMarkIcon className="w-8 h-8 cursor-pointer hover:text-[var(--gold-color)]" />
           ) : (
-            <Bars3Icon className="w-8 h-8 cursor-pointer" />
+            <Bars3Icon className="w-8 h-8 cursor-pointer hover:text-[var(--gold-color)]" />
           )}
         </button>
 
@@ -30,7 +30,7 @@ const Navbar = ({ items }) => {
             <li key={item.path}>
               <Link
                 href={item.path}
-                className={`transition hover:text-gray-200 ${
+                className={`transition hover:text-[var(--gold-color)] ${
                   pathname === item.path
                     ? "text-[var(--gold-color)] font-semibold"
                     : ""
