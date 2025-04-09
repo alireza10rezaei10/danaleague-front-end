@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SIGN_UP_URL } from "../constants";
+import InlineLink from "@/components/InlineLink";
 
 export const STATIC_TEXTS = {
   INTRO: {
@@ -78,13 +79,8 @@ export const STATIC_TEXTS = {
       <>
         جشنواره دانالیگ در بخش‌های متنوعی مانند سخنرانی علمی، سمینارهای علمی و
         مسابقات برگزار می‌شود. دانش‌آموزان می‌توانند در یک یا چند عنوان از این
-        بخش‌ها{" "}
-        <Link
-          href={SIGN_UP_URL}
-          className="text-blue-500 underline underline-offset-7 hover:text-[var(--gold-color)]"
-        >
-          ثبت‌نام
-        </Link>{" "}
+        بخش‌ها
+        <InlineLink text={"ثبت‌نام"} url={SIGN_UP_URL} />
         کرده و آثار خود را ارائه دهند.
       </>,
       "ثبت‌نام به‌صورت فردی یا تیمی امکان‌پذیر است. حداکثر تعداد اعضای هر تیم سه نفر خواهد بود.",
@@ -144,7 +140,13 @@ export const STATIC_TEXTS = {
   },
   CONTAC_US: {
     TITLE: "اطلاعات تماس",
-    DESCRIPTION: `برای دریافت اطلاعات بیشتر، می‌توانید از طریق (شماره تماس، ایمیل، یا لینک ارتباطی) با دبیرخانهٔ جشنواره در تماس باشید.`,
+    DESCRIPTION: (
+      <>
+        برای دریافت اطلاعات بیشتر، می‌توانید از طریق صفحهٔ{" "}
+        <InlineLink text="تماس با ما" url="/contact-us" /> ، با ما در ارتباط
+        باشید.
+      </>
+    ),
   },
 };
 
