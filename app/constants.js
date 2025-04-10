@@ -10,6 +10,7 @@ export const STATIC_TEXTS = {
 export const IMAGES = {
   POSTER: { URL: "/images/poster.jpg", ALT: "پوستر جشنواره دانالیگ" },
   PENCIL: { URL: "/images/icons/pencil.svg", ALT: "مداد کارتونی" },
+  NO_STAR_ENAMAD: { URL: "/images/no-star-enamad.png", ALT: "لوگوی ای نماد" },
 };
 
 export const MEHVARS = [
@@ -43,3 +44,19 @@ export const NAV_MENU_ITEMS = [
   { name: "درباره ما", path: "/about-us" },
   { name: "تماس با ما", path: "/contact-us" },
 ];
+
+export const FOOTER_LINKS = {
+  EXTERNALS: [
+    { TITLE: "داناشو", URL: "https://danasho-edu.ir/" },
+    { TITLE: "خانه فیزیک تهران", URL: "https://tphyc.ir" },
+    { TITLE: "خانه علم ایران", URL: "https://elmic.org" },
+    { TITLE: "دانشکده فیزیک دانشگاه تهران", URL: "https://physics.ut.ac.ir" },
+  ],
+  INTERNALS: [
+    { TITLE: "درباره ما", URL: "/about-us" },
+    { TITLE: "ثبت نام", URL: SIGN_UP_URL },
+    { TITLE: "چالشکده", URL: "/challenges" },
+    { TITLE: "زمانبندی", URL: "/info#timing" },
+    { TITLE: "محورهای جشنواره", URL: "/info#pivots" },
+  ],
+};
