@@ -4,6 +4,19 @@ import { IMAGES, FOOTER_LINKS } from "@/app/constants";
 import { SiInstagram, SiTelegram, SiLinkedin } from "react-icons/si";
 
 const Footer = () => {
+  const renderLinks = (links, isInternal = false) =>
+    links.map((link) => (
+      <li key={link.URL} className="hover:text-[var(--gold-color)]">
+        {isInternal ? (
+          <Link href={link.URL}>{link.TITLE}</Link>
+        ) : (
+          <a href={link.URL} target="_blank" rel="noopener noreferrer">
+            {link.TITLE}
+          </a>
+        )}
+      </li>
+    ));
+
   return (
     <footer className="mt-32 py-16 bg-[var(--primary-color)] text-white">
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
@@ -11,15 +24,7 @@ const Footer = () => {
         <div className="text-center">
           <h3 className="text-lg font-bold mb-4">لینک‌های داخلی</h3>
           <ul className="space-y-2 text-sm">
-            {FOOTER_LINKS.INTERNALS.map((link, index) => {
-              return (
-                <li key={index}>
-                  <a href={link.URL} target="_blank" rel="noopener noreferrer">
-                    {link.TITLE}
-                  </a>
-                </li>
-              );
-            })}
+            {renderLinks(FOOTER_LINKS.INTERNALS, true)}
           </ul>
         </div>
 
@@ -27,15 +32,7 @@ const Footer = () => {
         <div className="text-center">
           <h3 className="text-lg font-bold mb-4">لینک‌های خارجی</h3>
           <ul className="space-y-2 text-sm">
-            {FOOTER_LINKS.EXTERNALS.map((link, index) => {
-              return (
-                <li key={index}>
-                  <a href={link.URL} target="_blank" rel="noopener noreferrer">
-                    {link.TITLE}
-                  </a>
-                </li>
-              );
-            })}
+            {renderLinks(FOOTER_LINKS.EXTERNALS)}
           </ul>
         </div>
 

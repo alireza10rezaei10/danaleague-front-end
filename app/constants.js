@@ -54,9 +54,10 @@ export const FOOTER_LINKS = {
   ],
   INTERNALS: [
     { TITLE: "درباره ما", URL: "/about-us" },
-    { TITLE: "ثبت نام", URL: SIGN_UP_URL },
-    { TITLE: "چالشکده", URL: "/challenges" },
-    { TITLE: "زمانبندی", URL: "/info#timing" },
+    { TITLE: "تماس با ما", URL: "/contact-us" },
+    { TITLE: "ثبت‌نام", URL: SIGN_UP_URL },
     { TITLE: "محورهای جشنواره", URL: "/info#pivots" },
+    { TITLE: "چالشکده", URL: "/challenges" },
+    { TITLE: "زمان‌بندی", URL: "/info#timing" },
   ],
 };
